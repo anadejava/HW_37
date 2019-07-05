@@ -61,6 +61,42 @@ public class TicTacToeTest {
            TicTacToe.board[8] = "X";
            assertEquals("Not correct", "draw", TicTacToe.checkWinner());
           }
+       @Test public void draw4() {
+           TicTacToe.board[0] = "X";
+           TicTacToe.board[2] = "O";
+           TicTacToe.board[3] = "X";
+           TicTacToe.board[4] = "X";
+           TicTacToe.board[7] = "O";
+           TicTacToe.board[1] = "O";
+           TicTacToe.board[5] = "O";
+           TicTacToe.board[6] = "X";
+           TicTacToe.board[8] = "X";
+           assertEquals("Not correct", "draw", TicTacToe.checkWinner());
+          }
+       @Test public void draw5() {
+           TicTacToe.board[0] = "O";
+           TicTacToe.board[2] = "X";
+           TicTacToe.board[3] = "O";
+           TicTacToe.board[4] = "O";
+           TicTacToe.board[7] = "X";
+           TicTacToe.board[1] = "X";
+           TicTacToe.board[5] = "X";
+           TicTacToe.board[6] = "O";
+           TicTacToe.board[8] = "O";
+           assertEquals("Not correct", "draw", TicTacToe.checkWinner());
+          }
+       @Test public void draw6() {
+           TicTacToe.board[0] = "O";
+           TicTacToe.board[2] = "X";
+           TicTacToe.board[3] = "X";
+           TicTacToe.board[4] = "X";
+           TicTacToe.board[7] = "O";
+           TicTacToe.board[1] = "O";
+           TicTacToe.board[5] = "O";
+           TicTacToe.board[6] = "X";
+           TicTacToe.board[8] = "X";
+           assertEquals("Not correct", "draw", TicTacToe.checkWinner());
+          }
       
        @Test public void test() {
               TicTacToe.turn = "X";
